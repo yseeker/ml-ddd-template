@@ -2,7 +2,7 @@ from .image1_service import Image1Service
 from .image2_service import Image2Service
 
 class ImageCombinationService:
-    def __init__(self, image1_service: EdgeDetectionService, image2_service: ColorFillingService):
+    def __init__(self, image1_service: Image1Service, image2_service: Image2Service):
         self.image1_service = image1_service
         self.image2_service = image2_service
 
